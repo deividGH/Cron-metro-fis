@@ -11,14 +11,25 @@ package temporizador;
  * @author bparr
  */
 public class Temporizador {
+    static int limite = 0;
+    static int descansos = 0;
+    public Temporizador() {
+    }
+    
+    Temporizador(int a, int b){
+    limite = a;
+    descansos = b;
+    }
+    
    public static void main(String arglist[]) {
+       //Temporizador temp = new Temporizador();
        int minutos = 0;
        int segundos = 0;
        
-       for (minutos = 0; minutos < 60; minutos++) {
+       for (minutos = 0; minutos < limite; minutos++) {
            for (segundos = 0; segundos <60; segundos++) {
                
-               delaySeg();
+            delaySeg();
            }
        }
     

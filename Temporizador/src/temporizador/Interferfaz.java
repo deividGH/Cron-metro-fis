@@ -28,35 +28,56 @@ public class Interferfaz extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        Tiempo = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        ejercicio = new javax.swing.JTextField();
+        iniciar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        salida = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Tiempo de Rutina");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 380, -1));
+
+        Tiempo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TiempoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Tiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 380, -1));
 
         jLabel2.setText("Tiempo de ejercicio por minuto");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 380, -1));
+        getContentPane().add(ejercicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 380, -1));
 
-        jButton1.setText("INICIAR");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 380, -1));
+        iniciar.setText("INICIAR");
+        iniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iniciarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(iniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 380, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        salida.setColumns(20);
+        salida.setRows(5);
+        jScrollPane1.setViewportView(salida);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 380, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void TiempoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TiempoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TiempoActionPerformed
+
+    private void iniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iniciarActionPerformed
+        int tiempo = Integer.parseInt(Tiempo.getText());
+        int segundos = Integer.parseInt(ejercicio.getText());
+        Temporizador temp = new Temporizador(tiempo,segundos);
+    }//GEN-LAST:event_iniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -94,12 +115,12 @@ public class Interferfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField Tiempo;
+    private javax.swing.JTextField ejercicio;
+    private javax.swing.JButton iniciar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextArea salida;
     // End of variables declaration//GEN-END:variables
 }
