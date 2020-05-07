@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#tabla {
+    width: 100%;
+    margin: 3% 0% 10% 0%;
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+    border: 2px solid #ffffff;
+}
+
+#tabla2 {
+    width: 100%;
+    margin: 3% 0% 3% 0%;
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+
+/*td {
+    border: 2px solid #ffffff;
+}
+
+tr {
+    border: 2px solid #ffffff;
+}
+*/
+
+h3 {
+    color: #ffffff;
+    background: transparent;
+    padding: 10px;
+}
+
+.contenedor {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background: url("../imagenes/fondo.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.cont_ini {
+    width: 100%;
+    height: 600px;
+    background: url("../imagenes/fondo.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    background: #252932;
+}
+
+#panelrutina {
+    position: absolute;
+    width: 60%;
+    max-width: 1000px;
+    margin-bottom: 1em;
+    margin: 1% 20% 5% 20%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+#timer {
+    margin: 30px auto 0;
+    width: 60%;
+}
+
+#timer .container {
+    display: table;
+    background: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+#timer .container div {
+    display: table-cell;
+    font-size: 60px;
+    width: 20px;
+}
+
+#timer .container .divider {
+    width: 10px;
+    color: #ffffff;
+}
+
+#btn-comenzar {
+    box-sizing: border-box;
+    background: rgb(24, 23, 23);
+    border: none;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    font-size: 30px;
+    color: #777;
+}
+
+#btn-comenzar:hover {
+    background: #fff;
+}
+
+header .logo {
+    color: #f2f2f2;
+    font-size: 50px;
+    line-height: 100px;
+    margin-left: 1em;
+    float: left;
+}
+
+header nav {
+    float: right;
+    line-height: 100px;
+    margin-right: 3em;
+}
+
+header nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500 ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover {
+    background: #1da74bf6;
+    border-radius: 50px;
+}
+
+.header2 {
+    position: fixed;
+    height: 100px;
+}
+
+.header2 .logo {
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.header2 nav {
+    line-height: 100px;
+}
+
+.piepag {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffffb4;
+}
+
+.panelForm {
+    position: absolute;
+    background-color: #f4f8fc79;
+    width: 50%;
+    margin: 7% 25% 5% 25%;
+    max-width: 1000px;
+    margin-bottom: 1em;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 950px) {
+    .contenedor {
+        background: url("../imagenes/fondo.jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .cont_ini {
+        background: url("../imagenes/fondo.jpg")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    header .logo,
+    header nav {
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .header {
+        height: auto;
+    }
+    .header2 .logo,
+    .header2 nav {
+        line-height: 50px;
+    }
+}

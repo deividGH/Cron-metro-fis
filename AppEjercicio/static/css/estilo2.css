@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+button {
+    overflow: visible;
+    text-transform: none;
+}
+
+button,
+input {
+    color: #2e302e;
+    font: inherit;
+    margin: 0;
+}
+
+#container {
+    border: solid 3px #2e302e;
+    width: 80%;
+    margin: 30px auto;
+    position: relative;
+    height: 330px;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+h1 {
+    color: #2e302e;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: solid 2px #2e302e;
+    margin: auto;
+    width: 80px;
+}
+
+.clave {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='clave'] {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #2e302e;
+    color: #2e302e;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='clave']:focus,
+.name {
+    float: left;
+    width: 45%;
+}
+
+::-webkit-input-placeholder {
+    color: #2e302e;
+}
+
+#form_button1 {
+    float: left;
+    background: none;
+    border: solid 2px #2e302e;
+    color: #2e302e;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button1:hover {
+    background: #2e302e;
+    color: #F2F3EB;
+}
+
+#form_button2 {
+    float: right;
+    background: none;
+    border: solid 2px #2e302e;
+    color: #2e302e;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button2:hover {
+    background: #2e302e;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+    .underline {
+        width: 68px;
+    }
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+    .underline {
+        width: 53px;
+    }
+    input[type='text'],
+    [type='clave'] {
+        font-size: 0.875em;
+    }
+}
