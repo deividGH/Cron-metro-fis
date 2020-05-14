@@ -5,13 +5,11 @@ $(document).ready(function() {
         minuto: 0,
         segundo: 0
     };
-    duracion = document.getElementById("duracion").value;
-    tejexmin = document.getElementById("tejexmin").value;
+
+    var duracion = document.getElementById("duracion");
+    var tejexmin = document.getElementById("tejexmin");
     var audio = document.getElementById("audio");
     var audiof = document.getElementById("audiof");
-
-
-    var tiempo_corriendo = null;
 
     $("#btn-comenzar").click(function() {
         if ($(this).text() == 'Comenzar') {
@@ -19,16 +17,15 @@ $(document).ready(function() {
             tiempo_corriendo = setInterval(function() {
                 // Segundos
                 tiempo.segundo++;
-                if (tiempo.segundo == tejexmin) {
+                if (tiempo.segundo == $(tejexmin).val() - 1) {
                     audio.play();
                 }
                 if (tiempo.segundo >= 60) {
                     tiempo.segundo = 0;
                     tiempo.minuto++;
                     audiof.play();
-                    if (tiempo.minuto == duracion) {
-
-                        window.location.href = 'regRutina.php';
+                    if (tiempo.minuto == $(duracion).val()) {
+                        window.location.href = 'regRutina.php?';
                     }
                 }
 
