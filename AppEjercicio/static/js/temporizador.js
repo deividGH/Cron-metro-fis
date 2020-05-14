@@ -5,33 +5,32 @@ $(document).ready(function() {
         minuto: 0,
         segundo: 0
     };
-
-    var tiempo_corriendo = null;
-    var duracion = null;
-    var tejexmin = null;
-    /*  duracion = document.getElementById("duracion").value;
+    duracion = document.getElementById("duracion").value;
     tejexmin = document.getElementById("tejexmin").value;
     var audio = document.getElementById("audio");
     var audiof = document.getElementById("audiof");
-*/
+
+
+    var tiempo_corriendo = null;
 
     $("#btn-comenzar").click(function() {
         if ($(this).text() == 'Comenzar') {
             $(this).text('Detener');
             tiempo_corriendo = setInterval(function() {
                 // Segundos
-
                 tiempo.segundo++;
-                /*if (segundo == tejexmin) {
+                if (tiempo.segundo == tejexmin) {
                     audio.play();
-                }*/
+                }
+                audio.play();
                 if (tiempo.segundo >= 60) {
-                    audiof.play();
                     tiempo.segundo = 0;
                     tiempo.minuto++;
-                    /* if (minuto == duracion) {
-                         window.location.href = 'regRutina.php';
-                     }*/
+
+                    if (tiempo.minuto == duracion) {
+                        audiof.play();
+                        window.location.href = 'regRutina.php';
+                    }
                 }
 
                 // Minutos
