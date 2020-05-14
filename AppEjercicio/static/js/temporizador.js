@@ -22,13 +22,12 @@ $(document).ready(function() {
                 if (tiempo.segundo == tejexmin) {
                     audio.play();
                 }
-                audio.play();
                 if (tiempo.segundo >= 60) {
                     tiempo.segundo = 0;
                     tiempo.minuto++;
-
+                    audiof.play();
                     if (tiempo.minuto == duracion) {
-                        audiof.play();
+
                         window.location.href = 'regRutina.php';
                     }
                 }
