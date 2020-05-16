@@ -3,13 +3,15 @@
 session_start();
 $name = $_SESSION['name'];
 $clave=$_SESSION['clave'];
+if (isset($_GET["duracion"]) && isset($_GET["tejexmin"])) {
+    $duracion = $_GET["duracion"];
+    $tejexmin= $_GET["tejexmin"];
+}
  if(!isset($name)){
      header("location: index.php");
    }else{
 include "conexion.php";
 $fecha = " " . date("d") . " / " . date("m") . " / " . date("Y");
-$duracion = $_POST['duracion'];
-$tejexmin = $_POST['tejexmin'];
 $_SESSION['name'] = $name; 
 
 $sql =<<<EOF
