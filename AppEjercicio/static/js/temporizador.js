@@ -25,7 +25,8 @@ $(document).ready(function() {
                     tiempo.minuto++;
                     audiof.play();
                     if (tiempo.minuto == $(duracion).val()) {
-                        window.location.href = 'regRutina.php?';
+                       window.location.href = 'regRutina.php' + "?duracion=" + $(duracion).val() + "&tejexmin=" + $(tejexmin).val();
+
                     }
                 }
 
