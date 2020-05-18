@@ -84,7 +84,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 ## Wiki 📖 📄 🎁 📢
 
-Puedes encontrar mucho más de cómo utilizar este modulo en nuestra [Wiki](https://github.com/deividGH/Cron-metro-fis/Twitter/wiki)
+Puedes encontrar mucho más de cómo utilizar este modulo en nuestra [Wiki](https://github.com/deividGH/Cron-metro-fis/wiki)
 
 
 
